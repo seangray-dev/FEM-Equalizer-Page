@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .container {
+    margin-inline: auto;
+    max-width: 20.4375rem;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      margin-inline: auto;
+      max-width: 43.75rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      margin-inline: auto;
+      max-width: 69.375rem;
+    }
+  }
+
+  .container-text {
+    margin-inline: auto;
+    max-width: 20.4375rem;
+  }
+
+  svg.social-link-hover path {
+    transition: all 0.3s ease;
+  }
+
+  svg.social-link-hover:hover path,
+  svg.social-link-hover:focus path {
+    fill: #fa7453;
+  }
+}
